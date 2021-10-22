@@ -1,0 +1,42 @@
+def checkAlnum(s):
+    for i in range(len(s)):
+        if(s[i].isalnum()):
+            return True
+    return False
+
+def checkAlpha(s):
+    for i in range(len(s)):
+        if(s[i].isalpha()):
+            return True
+    return False
+
+def checkDigit(s):
+    for i in range(len(s)):
+        if(s[i].isdigit()):
+            return True
+    return False
+
+def checkLower(s):
+    for i in range(len(s)):
+        if(s[i].islower()):
+            return True
+    return False
+
+def checkUpper(s):
+    for i in range(len(s)):
+        if(s[i].isupper()):
+            return True
+    return False
+
+if __name__ == '__main__':
+    s = input()
+    alnum = checkAlnum(s)
+    alpha = checkAlpha(s)
+    digit = checkDigit(s)
+    lower = checkLower(s)
+    upper = checkUpper(s)
+    print(alnum)
+    print(alpha)
+    print(digit)
+    print(lower)
+    print(upper)
