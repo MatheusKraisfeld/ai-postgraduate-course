@@ -1,0 +1,6 @@
+x, k = map(int, input().split())
+eq = input()
+if eval(eq) == k:
+    print('True')
+else:
+    print('False')
