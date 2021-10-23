@@ -1,0 +1,10 @@
+n, x = input().split()
+
+marks_list = list()
+
+for _ in range(int(x)):
+    subject = map(float, input().split())
+    marks_list.append(subject)
+    
+for i in zip(*marks_list):
+    print(sum(i)/len(i))
